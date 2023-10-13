@@ -1,14 +1,16 @@
+
+//returns nothing, just prints a string in Console
 function helloWorld(){
     console.log("Hello, World!");
 }
 
-function simpleCalc(a, b){
-    let sum = a + b;
-    console.log(`sum=${sum}`);
+function sum(a, b){
+    return a + b;
 }
 
-//TODO
-//call function from function
+function multiply(c, d){
+    return c * d;
+}
 
-//helloWorld();
-//simpleCalc(2, 3);
+let result = multiply(5, sum(2, 3));
+console.log(result);
