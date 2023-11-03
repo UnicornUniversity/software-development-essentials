@@ -1,4 +1,4 @@
-let st = {
+let st1 = {
     "name" : "Mary",
     "faculty" : "medical",
     "marks" : [4, 5, 2],
@@ -10,6 +10,46 @@ let st = {
     }
 };
 
+let st2 = {
+    "name" : "John",
+    "faculty" : "medical",
+    "marks" : [4, 5, 2],
+    "online" : true,
+    "contacts" :
+    {
+        "phone" : "111-222-333",
+        "email" : "mary@google.com"
+    }
+};
+
+let arr1 = [st1, st2];
+
+let arr2 = [
+    {
+        "name" : "Mary",
+        "faculty" : "medical",
+        "marks" : [4, 5, 2],
+        "online" : true,
+        "contacts" :
+        {
+            "phone" : "111-222-333",
+            "email" : "mary@google.com"
+        }
+    },
+    {
+        "name" : "John",
+        "faculty" : "medical",
+        "marks" : [4, 5, 2],
+        "online" : true,
+        "contacts" :
+        {
+            "phone" : "111-222-333",
+            "email" : "mary@google.com"
+        }
+    }
+]
+
+/*
 console.log(
     "Student name=" + st.name 
     + "; faculty=" + st["faculty"]
@@ -39,6 +79,13 @@ for(let i = 0; i < st.marks.length; i++){
 
 console.log("Min mark of Mary = " + minMark);
 
+*/
+
+
+for(let i=0; i < arr1.length; i++){
+    let student = arr2[i];
+    console.log("student data: " + arr2[i].name + "; contacts:" + student.contacts.email);
+}
 
 
 
