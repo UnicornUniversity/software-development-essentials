@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>My Test Page</title>
+        <script type="text/javascript" src="input_vector_interview_task1_10k.js"></script> 
+        <script type="text/javascript" src="bruteForce.js"></script> 
+        <script type="text/javascript" src="maps.js"></script> 
+
+        <script type="text/javascript">
+            const target = 64189;
+            console.log("Total length of input=" + input_vector.length);
+            console.log("------------");
+            console.log("Brute Force:");
+            let start = Date.now();
+            findIndexesBruteForce(input_vector, target)            
+            let timeTaken = Date.now() - start;
+            console.log("Time=" + timeTaken);
+            console.log("------------");    
+            console.log("Map:");
+            start = Date.now();
+            findIndexesMaps(input_vector, target)            
+            timeTaken = Date.now() - start;
+            console.log("Time=" + timeTaken);
+            console.log("------------");   
+
+        </script>
+    </head>    
+    <body>
+        <b>Press F12 to open Dev. panel and choose Console tab</b>
+    </body>
+</html>
